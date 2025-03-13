@@ -18,6 +18,12 @@ def receipes(request):
         return redirect('/receipe/')  # Redirect to avoid duplicate submissions
 
     queryset = Receipe.objects.all()
+
+    if request.GET.get('search'):
+       queryset = queryset.filter(receipe_name__icontains = request.GET.get('search'))
+       
+
+
     return render(request, 'receipee.html', {'receipes': queryset})
 
 
