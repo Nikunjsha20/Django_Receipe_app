@@ -25,7 +25,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mainpage, name='mainpg'),
     path('receipe/', receipes, name="receipes"),
-    path('delete-receipe/<int:id>/', delete_receipe, name="delete_receipe")
+    path('delete-receipe/<int:id>/', delete_receipe, name="delete_receipe"),
+    path('update-receipe/<int:id>/', update_receipe, name="update_receipe"),
 ]
 
 

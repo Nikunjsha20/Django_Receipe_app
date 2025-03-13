@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block start %}
+
+<div class="container">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2>Update Receipe</h2>
+        <div class="rec">
+            <label for="receipeName" class="form-label">Receipe Name</label>
+            <input type="text" required value="{{receipe.receipe_name}}" name="receipe_name" class="form-control" />
+        </div>
+        <div class="rec">
+            <label for="receipeDisc" class="form-label">Receipe Description</label>
+            <textarea class="form-control" required name="receipe_description" id="">{{receipe.receipe_description}}</textarea>
+        </div>
+        <div class="rec">
+            <label for="receipeImage" class="form-label">Receipe Image</label>
+            <input type="file" name="receipe_image" class="form-control" />
+        </div>
+        <button type="submit" class="btn-prmary">Update</button>
+    </form>
+</div>
+
+
+
+{% endblock %}
