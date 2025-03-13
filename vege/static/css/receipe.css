@@ -1,0 +1,66 @@
+/* Apply styles to the container */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #b1716c;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(243, 238, 238, 0.1);
+}
+
+/* Style form elements */
+.rec {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: rgb(32, 29, 29);
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/* Fix textarea size and enable scrolling */
+textarea.form-control {
+    width: 100%;
+    height: 120px; /* Fixed height */
+    resize: none; /* Prevent manual resizing */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style submit button */
+.btn-prmary {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-prmary:hover {
+    background: #1644758a;
+}
+
+/* .container{
+    display: flex;
+    justify-content: center;
+} */
+
+/* .table { */
+    /* width: 80%; Adjust width as needed */
+    /* margin: auto;
+    border-collapse: collapse;
+    color: #b1716c;
+} */
